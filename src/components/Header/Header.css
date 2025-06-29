@@ -1,0 +1,184 @@
+.header {
+  height: 34vw;
+  margin: 30px 30px;
+  background: url("/header_img.png") no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1vw;
+  max-width: 50%;
+  bottom: 20%;
+  left: 6vw;
+  animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+  font-weight: 800;
+  color: white;
+  font-size: max(4.5vw, 22px);
+  font-family: "Chivo", sans-serif;
+  font-style: extrabold;
+}
+
+.header-contents p {
+  color: white;
+  font-family: "Chivo", sans-serif;
+  font-style: regular;
+  font-weight: 400;
+  font-size: 1.5vw;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #ff4e50 0%,
+    #f9d423 51%,
+    #ff4e50 100%
+  );
+}
+.btn-grad {
+  font-size: max(1.2vw, 16px);
+  font-family: "Chivo", sans-serif;
+  font-style: regular;
+  font-weight: 300;
+  margin: 10px;
+  padding: 15px 35px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 10px #eee;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  position: absolute;
+  bottom: 2vh;
+  left: 5vw;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* @media (max-width: 1050px) {
+  .header {
+    height: 38vw;
+    margin: 20px 20px;
+    background-size: contain;
+  }
+
+  .header-contents {
+    max-width: 45%;
+  }
+
+  .header-contents h2 {
+    font-size: 1.5vw;
+  }
+
+  .header-contents p {
+    font-size: 16px;
+  }
+
+  .btn-grad {
+    font-size: 14px;
+    padding: 10px 30px;
+    position: absolute;
+    left: unset;
+    bottom: 50px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .header-contents {
+    max-width: 65%;
+  }
+  .header-contents p {
+    display: none;
+  }
+  .btn-grad {
+    font-size: 14px;
+    padding: 15px 5px;
+
+
+  }
+} */
+
+/* For tablets and below */
+@media (max-width: 1024px) {
+  .header {
+    height: 34vw;
+    margin: 20px;
+    background-size: contain;
+    position: relative;
+  }
+
+  .header-contents {
+    max-width: 70%;
+    left: 4vw;
+    bottom: 10%;
+    gap: 1.5vw;
+  }
+
+  .header-contents h2 {
+    font-size: max(5vw, 20px);
+  }
+
+  .header-contents p {
+    font-size: 2vw;
+  }
+
+  .btn-grad {
+    font-size: max(1.5vw, 14px);
+    padding: 12px 15px;
+    bottom: 20px;
+    left: 60vw;
+    right: 14px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 600px) {
+  .header {
+    height: 60vw;
+    margin: 10px;
+    background-size: cover;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  .header-contents {
+    max-width: 90%;
+    left: 4.2vw;
+    bottom: 30%;
+    gap: 2vw;
+  }
+
+  .header-contents h2 {
+    font-size: max(8vw, 18px);
+  }
+
+  .header-contents span {
+    font-size: max(8vw, 18px);
+  }
+
+  .header-contents p {
+    display: none;
+  }
+
+  .btn-grad {
+    font-size: max(1vw, 10px);
+    padding: 8px 10px;
+    bottom: 0.8vh;
+    left: 4vw;
+    right: unset;
+  }
+}

@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+.cart {
+  margin-top: 100px;
+  /* display: grid;
+  grid-template-columns: 1fr 3fr; */
+}
+
+.cart-items-title {
+  
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  align-items: center;
+  color: rgb(36, 36, 36);
+  font-size: max(1vw, 16px);
+  font-family: "Chivo", sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cart-items-item {
+  margin: 10px 0px;
+  color: black;
+  font-family: "Chivo", sans-serif;
+  font-style: medium;
+  font-weight: 400;
+  text-align: center;
+}
+
+.cart-items-item img {
+  width: 100px;
+  justify-self: center;
+}
+
+.cart hr {
+  height: 1px;
+  border: none;
+  background-color: #000000;
+}
+
+.cart-bottom {
+  grid: 2;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: max(12vw, 20px);
+}
+
+.cart-total {
+  max-width: 70%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+ /* optional spacing */
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Chivo", sans-serif;
+  font-style: medium;
+  font-weight: 400;
+}
+
+.cart-total h2 {
+  font-family: "Chivo", sans-serif;
+  font-style: semibold;
+  font-weight: 800;
+  color: rgb(36, 36, 36);
+  font-size: larger;
+}
+
+.cart-total hr {
+  margin: 10px 0;
+}
+
+.promocode{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh; /* or 100vh for full viewport */
+  width: 100%;
+  text-align: center;
+}
+@media (max-width:750px) {
+  .cart {
+    margin-top: 40px;
+  }
+  .cart-items-title{  
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    column-gap: 16px;
+  }
+  .cart-items-title .items{
+    display: none;
+  }
+  .cart-items-item img{
+    display: none;
+  }
+
+  .cart-bottom{
+    margin-top: 40px;
+    flex-direction: column-reverse;
+    max-width: 100%;
+    align-items: center;
+  }
+  .promocode{
+    justify-content: start;
+  }
+  .cart-total{
+    max-width: 100%;
+  }
+}
+
+

@@ -1,0 +1,9 @@
+.promo-input::placeholder{
+    color: #F4631E;
+    letter-spacing: 2px;
+    opacity: 0.65;
+}
+.promo-input{
+    letter-spacing: 2px;
+}
+

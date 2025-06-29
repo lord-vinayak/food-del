@@ -1,0 +1,25 @@
+.order-container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 80px;
+}
+
+.order-left {
+  width: 100%;
+  max-width: max(30%, 500px);
+}
+
+.order-left h2 {
+  font-size: max(2vw, 40px);
+  font-family: "Cal-Sans", sans-serif;
+  font-weight: 800;
+  color: tomato;
+  margin-bottom: 20px;
+}
+
+.order-right{
+  width: 100%;
+  max-width: max(40%, 500px);
+}
