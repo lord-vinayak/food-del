@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./Header.css";
-import TrueFocus from "./Truefocus";
+import TrueFocus from "./TrueFocus";
 import Typewriter from "../../fancy/components/text/typewriter";
 
 const Header = ({ onScrollClick }) => {
